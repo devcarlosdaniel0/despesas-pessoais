@@ -9,7 +9,7 @@ import java.util.List;
 public interface DespesaService {
     Despesa save(DespesaPostRequestBody despesaPostRequestBody);
     List<Despesa> findAll();
-    Despesa findByIdOrThrowsException(Long id);
+    Despesa findByIdOrThrowsBadRequestException(Long id);
     Despesa update(DespesaPutRequestBody despesaPutRequestBody);
     void remove(Long id);
 }

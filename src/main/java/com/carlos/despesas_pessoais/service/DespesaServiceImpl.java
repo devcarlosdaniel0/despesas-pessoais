@@ -1,6 +1,7 @@
 package com.carlos.despesas_pessoais.service;
 
 import com.carlos.despesas_pessoais.domain.Despesa;
+import com.carlos.despesas_pessoais.exception.BadRequestException;
 import com.carlos.despesas_pessoais.mapper.DespesaMapper;
 import com.carlos.despesas_pessoais.repository.DespesaRepository;
 import com.carlos.despesas_pessoais.request.DespesaPostRequestBody;
@@ -30,21 +31,23 @@ public class DespesaServiceImpl implements DespesaService {
     }
 
     @Override
-    public Despesa findByIdOrThrowsException(Long id) {
+    public Despesa findByIdOrThrowsBadRequestException(Long id) {
         return despesaRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Despesa not found"));
+                .orElseThrow(() -> new BadRequestException("Despesa not found"));
     }
 
     @Override
+    @Transactional
     public Despesa update(DespesaPutRequestBody despesaPutRequestBody) {
-        Despesa despesaDB = findByIdOrThrowsException(despesaPutRequestBody.getId());
+        Despesa despesaDB = findByIdOrThrowsBadRequestException(despesaPutRequestBody.getId());
         Despesa despesa = DespesaMapper.INSTANCE.toDespesa(despesaPutRequestBody);
         despesa.setId(despesaDB.getId());
         return despesaRepository.save(despesa);
     }
 
     @Override
+    @Transactional
     public void remove(Long id) {
-        despesaRepository.delete(findByIdOrThrowsException(id));
+        despesaRepository.delete(findByIdOrThrowsBadRequestException(id));
     }
 }

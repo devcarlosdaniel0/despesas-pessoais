@@ -25,7 +25,7 @@ public class DespesaController {
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<Despesa> findById(@PathVariable long id) {
-        return ResponseEntity.ok(despesaService.findByIdOrThrowsException(id));
+        return ResponseEntity.ok(despesaService.findByIdOrThrowsBadRequestException(id));
     }
 
     @PostMapping
@@ -40,7 +40,7 @@ public class DespesaController {
     }
 
     @PutMapping
-    public ResponseEntity<Void> replace(@RequestBody DespesaPutRequestBody despesaPutRequestBody) {
+    public ResponseEntity<Void> replace(@RequestBody @Valid DespesaPutRequestBody despesaPutRequestBody) {
         despesaService.update(despesaPutRequestBody);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
