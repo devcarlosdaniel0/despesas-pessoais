@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c3a1610-5a25-475f-882e-31f305a37933" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/controller/DespesaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/domain/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/domain/Despesa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/domain/Frequencia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/mapper/DespesaMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/repository/DespesaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/request/DespesaPostRequestBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/request/DespesaPutRequestBody.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/service/DespesaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/carlos/despesas_pessoais/service/DespesaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
