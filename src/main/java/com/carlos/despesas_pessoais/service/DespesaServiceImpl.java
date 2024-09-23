@@ -16,7 +16,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DespesaServiceImpl implements DespesaService {
     private final DespesaRepository despesaRepository;
-    private final DespesaMapper despesaMapper;
 
     @Override
     @Transactional

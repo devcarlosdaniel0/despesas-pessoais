@@ -2,11 +2,11 @@ package com.carlos.despesas_pessoais.handler;
 
 import com.carlos.despesas_pessoais.exception.BadRequestException;
 import com.carlos.despesas_pessoais.exception.BadRequestExceptionDetails;
+import com.carlos.despesas_pessoais.exception.ExceptionDetails;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.time.LocalDateTime;
 
